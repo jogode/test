@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        transform: scale(1.5);
+        border-radius: 8px;
+    }
+
+    .carousel {
+        background-color: #087f5b;
+        width: 800px;
+        margin: 100px auto;
+        padding: 32px;
+        color: #ffffff;
+        position: relative;
+        padding-left: 86px;
+        border-radius: 8px;
+        /*FLEX*/
+        display: flex;
+        align-items: center;
+        gap: 86px;
+    }
+
+    .quote-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+
+    .quote-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .quote-job {
+        font-size: 12px;
+    }
+
+    .btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-icon {
+        stroke: #087f5b;
+        width: 24px;
+        height: 24px;
+    }
+
+    .btn-left {
+        left: 0px;
+    }
+
+    .btn-right {
+        right: 0px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="carousel">
+        <img src="hutao.jpg" alt="hutao">
+        <blockquote class="quote">
+            <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur
+                architecto earum pariatur,
+                recusandae illum incidunt placeat nesciunt nisi quidem repellendus, fuga aliquid ea! Voluptates impedit
+                eos
+                consequatur excepturi officiis.</p>
+            <p class="quote-author">hutao</p>
+            <p class="quote-job">model</p>
+
+
+        </blockquote>
+        <button class="btn btn-left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+
+
+        </button>
+        <button class="btn btn-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+
+
+        </button>
+    </div>
+</body>
+
+</html>
